@@ -1,4 +1,4 @@
-#### Hồi quy tuyến tính
+# Hồi quy tuyến tính
 
 Hồi quy tuyến tính (linear regression) là một thuật toán hồi quy mà đầu ra là một hàm số tuyến tính của đầu vào. Đây là thuật toán đơn giản nhất trong nhóm các thuật toán học có giám sát.
 
@@ -47,7 +47,7 @@ $$\mathbf{w}^* = \operatorname*{argmin}_{\mathbf{w}} \mathcal{L}(\mathbf{w}). \t
 
  $\mathbf{w}^*$  là nghiệm cần tìm của bài toán. Đôi khi dấu \* được bỏ đi và nghiệm có thể được viết gọn lại thành  $\mathbf{w} = \operatorname{argmin} \mathcal{L}(\mathbf{w})$ .
 
-#### Trung bình sai số
+Trung bình sai số
 
 Trong machine learning, hàm mất mát thường là trung bình cộng của sai số tại mỗi điểm. Về mặt toán học, hệ số  $\frac{1}{2N}$  không ảnh hưởng tới nghiệm của bài toán. Tuy nhiên, việc lấy trung bình này quan trọng vì số lượng điểm dữ liệu trong tập huấn luyện có thể thay đổi. Việc tính toán mất mát trên từng điểm dữ liệu sẽ hữu ích hơn trong việc đánh giá chất lượng mô hình. Ngoài ra, việc lấy trung bình cũng giúp tránh hiện tượng tràn số khi số lượng điểm dữ liệu lớn.
 
@@ -176,7 +176,7 @@ print('Input 155cm, true output 52kg, predicted output %.2fkg.' %(y1) )
 print('Input 160cm, true output 56kg, predicted output %.2fkg.' %(y2) )
 ```
 
-#### Kết quả:
+Kết quả:
 
 ```
 Input 155cm, true output 52kg, predicted output 52.94kg.
@@ -200,7 +200,7 @@ print("scikit-learn's solution: w_1 = ", regr.coef_[0], "w_0 = ",\
 print("our solution : w_1 = ", w[1], "w_0 = ", w[0])
 ```
 
-#### Kết quả:
+Kết quả:
 
 ```
 scikit-learn solution: w_1 = [ 0.55920496] w_0 = [-33.73541021]
