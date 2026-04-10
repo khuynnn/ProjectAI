@@ -1,0 +1,117 @@
+2026-03-31 13:59:09,519 - extractor - INFO - Initialize Marker Model...
+2026-03-31 13:59:19,890 - extractor - INFO - Model is ready (Init time: 10.37s)
+2026-03-31 13:59:19,893 - extractor - WARNING - Input file is not existing: data/raw/test.pdf
+2026-03-31 13:59:19,894 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:05:28,763 - chunker - INFO - Starting folder processing for: data/processed/fix_header/chapter7.md
+2026-03-31 14:06:46,571 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:06:53,029 - extractor - INFO - Model is ready (Init time: 6.46s)
+2026-03-31 14:07:02,058 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:07:06,623 - extractor - INFO - Model is ready (Init time: 4.56s)
+2026-03-31 14:07:06,645 - extractor - WARNING - Input file is not existing: data/raw/test.pdf
+2026-03-31 14:07:06,647 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:10:48,180 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:10:55,721 - extractor - INFO - Model is ready (Init time: 7.54s)
+2026-03-31 14:10:55,740 - extractor - WARNING - Input file is not existing: ../data/raw/test.pdf
+2026-03-31 14:10:55,742 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:11:38,028 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:11:44,168 - extractor - INFO - Model is ready (Init time: 6.14s)
+2026-03-31 14:11:44,189 - extractor - WARNING - Input file is not existing: ../data/raw/test.pdf
+2026-03-31 14:11:44,191 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:13:28,240 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:13:36,307 - extractor - INFO - Model is ready (Init time: 8.07s)
+2026-03-31 14:13:36,331 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 14:14:08,555 - extractor - INFO - Finished: ../../data/raw/test.pdf in 32.22s
+2026-03-31 14:14:08,557 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:14:08,559 - chunker - INFO - Starting chunking process for text input
+2026-03-31 14:14:08,560 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 14:14:08,562 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 14:14:08,565 - chunker - INFO - Created 7 chunks using LangChain
+2026-03-31 14:14:08,567 - chunker - INFO - Merged chunks into 7 final documents
+2026-03-31 14:14:08,569 - chunker - INFO - Finalizing 7 documents
+2026-03-31 14:14:08,570 - chunker - INFO - Completed finalization, returning 7 processed documents
+2026-03-31 14:24:04,283 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:24:05,432 - extractor - ERROR - Initialization PDFConverter Error: The paging file is too small for this operation to complete. (os error 1455)
+2026-03-31 14:29:06,951 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:29:18,879 - extractor - INFO - Model is ready (Init time: 11.93s)
+2026-03-31 14:29:18,882 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 14:29:42,367 - extractor - INFO - Finished: ../../data/raw/test.pdf in 23.48s
+2026-03-31 14:29:42,369 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:29:42,370 - chunker - INFO - Starting chunking process for text input
+2026-03-31 14:29:42,371 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 14:29:42,371 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 14:29:42,374 - chunker - INFO - Created 7 chunks using LangChain
+2026-03-31 14:29:42,375 - chunker - INFO - Merged chunks into 7 final documents
+2026-03-31 14:29:42,376 - chunker - INFO - Finalizing 7 documents
+2026-03-31 14:29:42,377 - chunker - INFO - Completed finalization, returning 7 processed documents
+2026-03-31 14:51:28,174 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:51:39,313 - extractor - INFO - Model is ready (Init time: 11.14s)
+2026-03-31 14:51:39,316 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 14:52:01,118 - extractor - INFO - Finished: ../../data/raw/test.pdf in 21.80s
+2026-03-31 14:52:01,121 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:52:01,123 - chunker - INFO - Starting chunking process for text input
+2026-03-31 14:52:01,124 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 14:52:01,124 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 14:52:01,127 - chunker - INFO - Created 7 chunks using LangChain
+2026-03-31 14:52:01,128 - chunker - INFO - Merged chunks into 7 final documents
+2026-03-31 14:52:01,128 - chunker - INFO - Finalizing 7 documents
+2026-03-31 14:52:01,129 - chunker - INFO - Completed finalization, returning 7 processed documents
+2026-03-31 14:57:46,943 - extractor - INFO - Initialize Marker Model...
+2026-03-31 14:57:58,128 - extractor - INFO - Model is ready (Init time: 11.18s)
+2026-03-31 14:57:58,247 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 14:58:26,537 - extractor - INFO - Finished: ../../data/raw/test.pdf in 28.29s
+2026-03-31 14:58:26,539 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 14:58:26,541 - chunker - INFO - Starting chunking process for text input
+2026-03-31 14:58:26,543 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 14:58:26,544 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 14:58:26,547 - chunker - INFO - Created 7 chunks using LangChain
+2026-03-31 14:58:26,548 - chunker - INFO - Merged chunks into 7 final documents
+2026-03-31 14:58:26,549 - chunker - INFO - Finalizing 7 documents
+2026-03-31 14:58:26,550 - chunker - INFO - Completed finalization, returning 7 processed documents
+2026-03-31 15:01:45,249 - extractor - INFO - Initialize Marker Model...
+2026-03-31 15:01:57,897 - extractor - INFO - Model is ready (Init time: 12.65s)
+2026-03-31 15:01:57,919 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 15:02:28,845 - extractor - INFO - Finished: ../../data/raw/test.pdf in 30.93s
+2026-03-31 15:02:28,847 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 15:02:28,848 - chunker - INFO - Starting chunking process for text input
+2026-03-31 15:02:28,849 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 15:02:28,850 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 15:02:28,851 - chunker - INFO - Created 7 chunks using LangChain
+2026-03-31 15:02:28,852 - chunker - INFO - Merged chunks into 7 final documents
+2026-03-31 15:02:28,853 - chunker - INFO - Finalizing 7 documents
+2026-03-31 15:02:28,854 - chunker - INFO - Completed finalization, returning 7 processed documents
+2026-03-31 15:04:54,269 - extractor - INFO - Initialize Marker Model...
+2026-03-31 15:05:02,573 - extractor - INFO - Model is ready (Init time: 8.30s)
+2026-03-31 15:05:02,598 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 15:05:32,638 - extractor - INFO - Finished: ../../data/raw/test.pdf in 30.04s
+2026-03-31 15:05:32,640 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 15:05:32,641 - chunker - INFO - Starting chunking process for text input
+2026-03-31 15:05:32,642 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 15:05:32,643 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 15:05:32,645 - chunker - INFO - Created 7 chunks using LangChain
+2026-03-31 15:05:32,647 - chunker - INFO - Merged chunks into 7 final documents
+2026-03-31 15:05:32,648 - chunker - INFO - Finalizing 7 documents
+2026-03-31 15:05:32,649 - chunker - INFO - Completed finalization, returning 7 processed documents
+2026-03-31 15:07:52,829 - extractor - INFO - Initialize Marker Model...
+2026-03-31 15:08:02,186 - extractor - INFO - Model is ready (Init time: 9.36s)
+2026-03-31 15:08:02,215 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 15:08:32,930 - extractor - INFO - Finished: ../../data/raw/test.pdf in 30.71s
+2026-03-31 15:08:32,932 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 15:08:32,934 - chunker - INFO - Starting chunking process for text input
+2026-03-31 15:08:32,935 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 15:08:32,937 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 15:08:32,940 - chunker - INFO - Created 7 chunks using LangChain
+2026-03-31 15:08:32,943 - chunker - INFO - Merged chunks into 7 final documents
+2026-03-31 15:08:32,945 - chunker - INFO - Finalizing 7 documents
+2026-03-31 15:08:32,946 - chunker - INFO - Completed finalization, returning 7 processed documents
+2026-03-31 15:10:06,111 - extractor - INFO - Initialize Marker Model...
+2026-03-31 15:10:13,133 - extractor - INFO - Model is ready (Init time: 7.02s)
+2026-03-31 15:10:13,135 - extractor - INFO - Starting extraction: ../../data/raw/test.pdf
+2026-03-31 15:10:34,629 - extractor - INFO - Finished: ../../data/raw/test.pdf in 21.49s
+2026-03-31 15:10:34,631 - processor - INFO - Starting header normalization (in-memory)
+2026-03-31 15:10:34,632 - chunker - INFO - Starting chunking process for text input
+2026-03-31 15:10:34,633 - chunker - INFO - Extracted 7 headers from test
+2026-03-31 15:10:34,634 - chunker - INFO - Built sibling relationships for 7 headers
+2026-03-31 15:10:34,636 - chunker - INFO - Created 5 chunks using LangChain
+2026-03-31 15:10:34,637 - chunker - INFO - Merged chunks into 5 final documents
+2026-03-31 15:10:34,637 - chunker - INFO - Finalizing 5 documents
+2026-03-31 15:10:34,638 - chunker - INFO - Completed finalization, returning 5 processed documents

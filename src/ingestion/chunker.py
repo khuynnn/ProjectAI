@@ -1,12 +1,55 @@
-import re
-from langchain_text_splitters import MarkdownHeaderTextSplitter
+from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+from typing import Optional
+from typing_extensions import List
 from src.utils.log import get_logger
+
+import re
+import uuid
+import os
+
 
 logger = get_logger(__name__)
 
+HEADERS_TO_SPLIT_ON = [
+    ("|#", "Header 1"),
+    ("|##", "Header 2"),
+    ("|###", "Header 3"),
+    ("|####", "Header 4"),
+    ("|#####", "Header 5"),
+    ("|######", "Header 6"),
+]
+
+# Load model configurations
+# config = load_config()
+# EMBEDDING_MODEL = (
+#     config["embedding_model"]["model_name"]
+#     if config["embedding_model"]["local_path"] is None
+#     or not os.path.exists(config["embedding_model"]["local_path"])
+#     else config["embedding_model"]["local_path"]
+# )
+SPLIT_LENGTH = 4096 # In tokens
+TOKEN_TO_CHAR_RATIO = 4    # 1 token ~ 4 chars
+CHARACTER_OVERLAP = SPLIT_LENGTH // 10
+MERGE_LENGTH = 1024 # In chars
+SPECIAL_CHAR = "|"
 
 class MarkdownChunker:
-    def __init__(self, merge_length=1024, special_char="|"):
+    def __init__(
+        self,
+        # model_path=EMBEDDING_MODEL,
+        # model_length=MODEL_LENGTH,
+        overlap_length=CHARACTER_OVERLAP,
+        character_chunk_size=SPLIT_LENGTH*TOKEN_TO_CHAR_RATIO,
+        merge_length=MERGE_LENGTH,
+        special_char=SPECIAL_CHAR,
+    ):
+        # self.model_length = model_length
+        self.markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=HEADERS_TO_SPLIT_ON)
+        self.recursive_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=character_chunk_size, chunk_overlap=overlap_length
+        )
+        self.character_chunk_size = character_chunk_size
         self.merge_length = merge_length
         self.special_char = special_char
 
@@ -43,13 +86,44 @@ class MarkdownChunker:
                 merged[k] = v2
         return merged
 
-    # ========== CÁC BƯỚC XỬ LÝ CHÍNH ==========
-    def process_and_merge(self, file_path):
-        logger.info(f"Starting chunking process for {file_path}")
-        with open(file_path, "r", encoding="utf-8") as f:
-            text = f.read()
+    def _finalize(self, docs):
+        logger.info(f"Finalizing {len(docs)} documents")
+        final_results = []
+        for doc in docs:
+            file_title = doc.metadata.get("file_title", "Unknown")
 
-        lines = text.split("\n")
+            # Sắp xếp header keys
+            h_keys = sorted([k for k in doc.metadata if "Header" in k], 
+                            key=lambda x: int(re.search(r'\d+', x).group()))
+            
+            clean_meta = {}
+            for k in h_keys:
+                flattened = self._flatten_to_str(doc.metadata[k])
+                if flattened:
+                    clean_meta[k] = flattened
+            hierarchy = " > ".join(clean_meta.values())
+            
+            # Regex xóa dấu đặc biệt ở đầu dòng
+            clean_text = re.sub(r'^[|#\s]+', '', doc.page_content).strip()
+            
+            context_header = f"NGỮ CẢNH: {file_title}"
+            if hierarchy:
+                context_header += f" > {hierarchy}"
+            
+            doc.page_content = f"{context_header}\n{'-'*30}\n{clean_text}"
+                
+            doc.metadata.update(clean_meta)
+            final_results.append(doc)
+            
+        logger.info(f"Completed finalization, returning {len(final_results)} processed documents")
+        return final_results
+
+    # ========== MAIN FUNCTION ==========
+    def process_text(self, file_id: str, file_title: str, file_content: str) -> List[Document]:
+        """Xử lý text trực tiếp thay vì từ file."""
+        logger.info("Starting chunking process for text input")
+        
+        lines = file_content.split("\n")
         headers = []
         ignore_code_block = False
 
@@ -60,7 +134,7 @@ class MarkdownChunker:
             if line.startswith("#") and not ignore_code_block:
                 headers.append(line)
 
-        logger.info(f"Extracted {len(headers)} headers from {file_path}")
+        logger.info(f"Extracted {len(headers)} headers from {file_title}")
 
         marked_headers = [self.special_char + h for h in headers]
         header_ptr = 0
@@ -87,10 +161,33 @@ class MarkdownChunker:
 
         logger.info(f"Built sibling relationships for {len(clean_siblings)} headers")
 
-        # 3. Chunking bằng LangChain
-        headers_to_split_on = [(f"{self.special_char}{'#'*i}", f"Header {i}") for i in range(1, 5)]
+        # 3. Chunking by headers
+        headers_to_split_on = HEADERS_TO_SPLIT_ON
         markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on, strip_headers=False)
         md_header_splits = markdown_splitter.split_text("\n".join(lines))
+
+        valid_splits = []
+        for doc in md_header_splits:
+            meta_vals = list(doc.metadata.values())
+            
+            clean_content = re.sub(r'^[|#\s]+', '', doc.page_content).strip()
+            
+            is_empty_chunk = False
+            
+            if not clean_content:
+                is_empty_chunk = True
+            elif meta_vals:
+                normalized_content = clean_content.strip().lower()
+                flattened_meta = [self._flatten_to_str(v).lower() for v in meta_vals if self._flatten_to_str(v)]
+                if normalized_content in flattened_meta:
+                    is_empty_chunk = True
+            
+            if not is_empty_chunk:
+                valid_splits.append(doc)
+            else:
+                logger.debug(f"Đã xóa chunk metadata-only: {doc.metadata}")
+
+        md_header_splits = valid_splits
 
         header_to_idx = {}
         for idx, doc in enumerate(md_header_splits):
@@ -153,30 +250,88 @@ class MarkdownChunker:
 
         logger.info(f"Merged chunks into {len(merged_docs)} final documents")
 
-        # 5. Làm sạch lần cuối và tạo Context
-        return self._finalize(merged_docs)
-
-    def _finalize(self, docs):
-        logger.info(f"Finalizing {len(docs)} documents")
-        final_results = []
-        for doc in docs:
-            # Sắp xếp header keys
-            h_keys = sorted([k for k in doc.metadata if "Header" in k], 
-                            key=lambda x: int(re.search(r'\d+', x).group()))
+        # 5. Chunking by texts
+        chunks = []
+        for section in merged_docs:
+            meta = {
+                k: v for k, v in section.metadata.items()
+                if not (k.startswith("Header") and not self._flatten_to_str(v))
+            }
+            # Metadata + context
+            meta["file_id"] = file_id
+            meta["file_title"] = file_title
             
-            clean_meta = {k: self._flatten_to_str(doc.metadata[k]) for k in h_keys}
-            hierarchy = " > ".join(clean_meta.values())
-            
-            # Regex xóa dấu đặc biệt ở đầu dòng
-            clean_text = re.sub(r'^[|#\s]+', '', doc.page_content, flags=re.MULTILINE).strip()
-            
-            if hierarchy:
-                doc.page_content = f"NGỮ CẢNH: {hierarchy}\n{'-'*30}\n{clean_text}"
+            # Handle large chunks by character length
+            if len(section.page_content) > self.character_chunk_size:
+                sub_chunk_contents = self.recursive_splitter.split_text(section.page_content)
+                sub_chunks = [
+                    Document(
+                        page_content=sub_content,
+                        metadata=meta,
+                        id=str(uuid.uuid4()),
+                    )
+                    for sub_content in sub_chunk_contents
+                ]
+                chunks.extend(sub_chunks)
             else:
-                doc.page_content = clean_text
-                
-            doc.metadata = clean_meta
-            final_results.append(doc)
-            
-        logger.info(f"Completed finalization, returning {len(final_results)} processed documents")
-        return final_results
+                chunks.append(
+                    Document(
+                        page_content=section.page_content,
+                        metadata=meta,
+                        id=str(uuid.uuid4()),
+                    )
+                )
+
+        # 6. Làm sạch lần cuối và tạo Context
+        return self._finalize(chunks)
+
+    def process_folder(self, folder_path: str, encoding: str = "utf-8", extensions: Optional[List[str]] = None) -> List[Document]:
+        """Process all files in a single folder and return the combined chunk documents."""
+        logger.info(f"Starting folder processing for: {folder_path}")
+
+        if not os.path.isdir(folder_path):
+            raise ValueError(f"The provided path is not a directory: {folder_path}")
+
+        documents: List[Document] = []
+        file_names = sorted(os.listdir(folder_path))
+
+        for file_name in file_names:
+            file_path = os.path.join(folder_path, file_name)
+            if not os.path.isfile(file_path):
+                continue
+
+            if extensions is not None:
+                if not any(file_name.lower().endswith(ext.lower()) for ext in extensions):
+                    logger.debug(f"Skipping file due to extension filter: {file_name}")
+                    continue
+
+            try:
+                with open(file_path, "r", encoding=encoding) as file:
+                    content = file.read()
+            except Exception as e:
+                logger.warning(f"Failed to read file {file_path}: {e}")
+                continue
+
+            logger.info(f"Processing file: {file_name}")
+            file_title = os.path.splitext(file_name)[0]
+            try:
+                file_docs = self.process_text(
+                    file_id=file_path,
+                    file_title=file_title,
+                    file_content=content,
+                )
+                documents.extend(file_docs)
+            except Exception as e:
+                logger.warning(f"Failed to process file {file_path}: {e}")
+
+        logger.info(f"Completed folder processing: {len(documents)} documents generated")
+        return documents
+
+
+if __name__ == "__main__":
+    input_dir = "data/processed/fix_header"
+
+    chunker = MarkdownChunker()
+    docs = chunker.process_folder(input_dir)
+
+    

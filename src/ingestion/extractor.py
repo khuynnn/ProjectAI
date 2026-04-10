@@ -22,7 +22,7 @@ class PDFExtractor:
 
         if not os.path.exists(input_dir):
             logger.warning(f"Input dir is not existing: {input_dir}")
-            return
+            return None
 
         pdf_files = sorted([f for f in os.listdir(input_dir) if f.endswith(".pdf")])
         os.makedirs(output_dir, exist_ok=True)
@@ -53,3 +53,37 @@ class PDFExtractor:
                 logger.error(f"Extraction Error while handling file {pdf_file}: {str(e)}", exc_info=True)
             
         logger.info("--- Finished extraction PDF file ---")
+
+
+    def extract_file(self, input_file):
+        if not os.path.exists(input_file):
+            logger.warning(f"Input file is not existing: {input_file}")
+            return None
+
+        try:
+            logger.info(f"Starting extraction: {input_file}")
+            start_time = time.time()
+
+            result = self.converter(input_file)
+            text = result.markdown 
+
+            elapsed = time.time() - start_time
+            logger.info(f"Finished: {input_file} in {elapsed:.2f}s")
+
+            return text
+
+        except Exception as e:
+            logger.error(
+                f"Extraction Error while handling file {input_file}: {e}",
+                exc_info=True
+            )
+            return None 
+
+
+
+if __name__ == '__main__':
+    input_dir = "data/raw"
+    output_dir = "data/processed/unfix_header"
+    
+    extractor = PDFExtractor()
+    extractor.extract_all(input_dir, output_dir)
