@@ -2544,3 +2544,664 @@ $$\nabla_{\lambda} \mathcal{L}(\mathbf{x}, \lambda) = f_1(\mathbf{x}) = 0 \tag{2
 2026-04-07 17:00:19,422 - __main__ - INFO - Querying for: Công thức hàm đối ngẫu Lagrange là gì
 2026-04-07 17:00:19,942 - __main__ - INFO - Retrieved 5 documents
 2026-04-07 17:00:23,446 - __main__ - INFO - Reranking completed
+2026-04-14 09:55:38,060 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 09:55:42,078 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 09:56:04,555 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 09:56:04,555 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 09:58:52,242 - src.rag.generation.generator - INFO - Asking LM question=hàm đối ngẫu có công thức j? in thread=default
+2026-04-14 09:58:52,281 - src.rag.retrieval.retriever - INFO - Querying for: hàm đối ngẫu có công thức j?
+2026-04-14 09:58:53,472 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:02:16,912 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:02:18,230 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:02:33,984 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:02:33,984 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:03:05,969 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 10:03:05,982 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 10:03:07,016 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:03:41,735 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 10:03:41,739 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 10:03:41,874 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:04:39,361 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:04:40,757 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:04:54,868 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:04:54,869 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:05:32,822 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 10:05:32,833 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 10:05:33,508 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:08:27,413 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:08:28,654 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:08:42,142 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:08:42,143 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:08:58,486 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 10:08:58,495 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 10:08:59,174 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:10:32,793 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:10:34,107 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:10:49,693 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:10:49,694 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:11:22,647 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 10:11:22,655 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 10:11:23,440 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:13:58,201 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:13:59,530 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:14:16,536 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:14:16,536 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:14:28,244 - src.rag.generation.generator - INFO - Asking LM question=aaaaaa in thread=default
+2026-04-14 10:14:28,256 - src.rag.retrieval.retriever - INFO - Querying for: aaaaaa
+2026-04-14 10:14:29,336 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:16:55,343 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:16:56,701 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:17:13,678 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:17:13,679 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:17:55,953 - src.rag.generation.generator - INFO - Asking LM question=aaaaa in thread=default
+2026-04-14 10:17:55,962 - src.rag.retrieval.retriever - INFO - Querying for: aaaaa
+2026-04-14 10:17:57,048 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:18:31,741 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j  in thread=default
+2026-04-14 10:18:31,745 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j 
+2026-04-14 10:18:31,883 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:18:56,587 - src.rag.generation.generator - INFO - Asking LM question=Công thức hàm đối ngẫu Lagrange là gì  in thread=default
+2026-04-14 10:18:56,590 - src.rag.retrieval.retriever - INFO - Querying for: Công thức hàm đối ngẫu Lagrange là gì 
+2026-04-14 10:18:56,724 - src.rag.retrieval.retriever - INFO - Retrieved 0 documents
+2026-04-14 10:24:31,815 - __main__ - INFO - Initializing Retriever
+2026-04-14 10:24:50,586 - __main__ - INFO - Retriever initialized successfully
+2026-04-14 10:24:50,587 - __main__ - INFO - Querying for: Công thức hàm đối ngẫu Lagrange là gì
+2026-04-14 10:24:51,142 - __main__ - INFO - Retrieved 0 documents
+2026-04-14 10:28:51,578 - __main__ - INFO - Initializing Retriever
+2026-04-14 10:28:51,578 - __main__ - INFO - persist_dir: D:\VSCode\AI\src\data\vector_db
+2026-04-14 10:32:40,727 - __main__ - INFO - Initializing IngestionPipeline
+2026-04-14 10:32:40,728 - src.rag.ingestion.extractor - INFO - Initialize Marker Model...
+2026-04-14 10:32:50,908 - src.rag.ingestion.extractor - INFO - Model is ready (Init time: 10.18s)
+2026-04-14 10:32:50,908 - src.rag.ingestion.embedder - INFO - Initializing VectorEmbedder with model BAAI/bge-m3 on device cuda
+2026-04-14 10:33:01,916 - src.rag.ingestion.embedder - INFO - VectorEmbedder initialized successfully
+2026-04-14 10:33:01,917 - __main__ - INFO - IngestionPipeline initialized successfully
+2026-04-14 10:33:01,917 - src.rag.ingestion.embedder - INFO - Connecting to DB at data/vector_db
+2026-04-14 10:33:02,919 - __main__ - INFO - Starting ingestion pipeline
+2026-04-14 10:33:02,920 - __main__ - INFO - === STAGE 1: PDF EXTRACTION ===
+2026-04-14 10:33:02,920 - src.rag.ingestion.extractor - INFO - Starting extraction: data/raw/test.pdf
+2026-04-14 10:34:28,206 - src.rag.ingestion.extractor - INFO - Finished: data/raw/test.pdf in 85.29s
+2026-04-14 10:34:28,206 - __main__ - INFO - === STAGE 2: HEADER NORMALIZATION ===
+2026-04-14 10:34:28,206 - __main__ - INFO - Normalizing headers for: data/raw/test.pdf
+2026-04-14 10:34:28,207 - src.rag.ingestion.processor - INFO - Starting header normalization (in-memory)
+2026-04-14 10:34:28,207 - __main__ - INFO - === STAGE 3: CHUNKING & EMBEDDING ===
+2026-04-14 10:34:28,208 - __main__ - INFO - Chunking file: data/raw/test.pdf
+2026-04-14 10:34:28,208 - src.rag.ingestion.chunker - INFO - Starting chunking process for text input
+2026-04-14 10:34:28,208 - src.rag.ingestion.chunker - INFO - Extracted 7 headers from test
+2026-04-14 10:34:28,208 - src.rag.ingestion.chunker - INFO - Built sibling relationships for 7 headers
+2026-04-14 10:34:28,210 - src.rag.ingestion.chunker - INFO - Created 5 chunks using LangChain
+2026-04-14 10:34:28,210 - src.rag.ingestion.chunker - INFO - Merged chunks into 5 final documents
+2026-04-14 10:34:28,210 - src.rag.ingestion.chunker - INFO - Finalizing 5 documents
+2026-04-14 10:34:28,211 - src.rag.ingestion.chunker - INFO - Completed finalization, returning 5 processed documents
+2026-04-14 10:34:28,211 - __main__ - INFO - === STAGE 4: VECTOR DATABASE APPENDING ===
+2026-04-14 10:34:28,211 - src.rag.ingestion.embedder - INFO - Appending 5 documents
+2026-04-14 10:34:30,079 - src.rag.ingestion.embedder - INFO - Inserted batch 1
+2026-04-14 10:34:30,079 - src.rag.ingestion.embedder - INFO - Append completed
+2026-04-14 10:34:30,079 - __main__ - INFO - Ingestion pipeline completed successfully!
+2026-04-14 10:34:30,079 - __main__ - INFO - === PIPELINE COMPLETE ===
+2026-04-14 10:37:24,591 - __main__ - INFO - Initializing IngestionPipeline
+2026-04-14 10:37:24,592 - src.rag.ingestion.extractor - INFO - Initialize Marker Model...
+2026-04-14 10:37:35,567 - src.rag.ingestion.extractor - INFO - Model is ready (Init time: 10.97s)
+2026-04-14 10:37:35,568 - src.rag.ingestion.embedder - INFO - Initializing VectorEmbedder with model BAAI/bge-m3 on device cuda
+2026-04-14 10:37:46,777 - src.rag.ingestion.embedder - INFO - VectorEmbedder initialized successfully
+2026-04-14 10:37:46,778 - __main__ - INFO - IngestionPipeline initialized successfully
+2026-04-14 10:37:46,778 - src.rag.ingestion.embedder - INFO - Connecting to DB at D:\VSCode\AI\src\data\vector_db
+2026-04-14 10:37:47,770 - __main__ - INFO - Starting ingestion pipeline
+2026-04-14 10:37:47,771 - __main__ - INFO - === STAGE 1: PDF EXTRACTION ===
+2026-04-14 10:37:47,771 - src.rag.ingestion.extractor - INFO - Starting extraction: data/raw/test.pdf
+2026-04-14 10:39:12,953 - src.rag.ingestion.extractor - INFO - Finished: data/raw/test.pdf in 85.18s
+2026-04-14 10:39:12,954 - __main__ - INFO - === STAGE 2: HEADER NORMALIZATION ===
+2026-04-14 10:39:12,954 - __main__ - INFO - Normalizing headers for: data/raw/test.pdf
+2026-04-14 10:39:12,955 - src.rag.ingestion.processor - INFO - Starting header normalization (in-memory)
+2026-04-14 10:39:12,955 - __main__ - INFO - === STAGE 3: CHUNKING & EMBEDDING ===
+2026-04-14 10:39:12,956 - __main__ - INFO - Chunking file: data/raw/test.pdf
+2026-04-14 10:39:12,956 - src.rag.ingestion.chunker - INFO - Starting chunking process for text input
+2026-04-14 10:39:12,956 - src.rag.ingestion.chunker - INFO - Extracted 7 headers from test
+2026-04-14 10:39:12,956 - src.rag.ingestion.chunker - INFO - Built sibling relationships for 7 headers
+2026-04-14 10:39:12,958 - src.rag.ingestion.chunker - INFO - Created 5 chunks using LangChain
+2026-04-14 10:39:12,958 - src.rag.ingestion.chunker - INFO - Merged chunks into 5 final documents
+2026-04-14 10:39:12,959 - src.rag.ingestion.chunker - INFO - Finalizing 5 documents
+2026-04-14 10:39:12,959 - src.rag.ingestion.chunker - INFO - Completed finalization, returning 5 processed documents
+2026-04-14 10:39:12,959 - __main__ - INFO - === STAGE 4: VECTOR DATABASE APPENDING ===
+2026-04-14 10:39:12,959 - src.rag.ingestion.embedder - INFO - Appending 5 documents
+2026-04-14 10:39:14,881 - src.rag.ingestion.embedder - INFO - Inserted batch 1
+2026-04-14 10:39:14,881 - src.rag.ingestion.embedder - INFO - Append completed
+2026-04-14 10:39:14,882 - __main__ - INFO - Ingestion pipeline completed successfully!
+2026-04-14 10:39:14,882 - __main__ - INFO - === PIPELINE COMPLETE ===
+2026-04-14 10:46:30,339 - __main__ - INFO - Initializing IngestionPipeline
+2026-04-14 10:46:30,339 - src.rag.ingestion.extractor - INFO - Initialize Marker Model...
+2026-04-14 10:46:39,924 - src.rag.ingestion.extractor - INFO - Model is ready (Init time: 9.58s)
+2026-04-14 10:46:39,925 - src.rag.ingestion.embedder - INFO - Initializing VectorEmbedder with model BAAI/bge-m3 on device cuda
+2026-04-14 10:46:50,552 - src.rag.ingestion.embedder - INFO - VectorEmbedder initialized successfully
+2026-04-14 10:46:50,552 - __main__ - INFO - IngestionPipeline initialized successfully
+2026-04-14 10:46:50,552 - src.rag.ingestion.embedder - INFO - Connecting to DB at D:\VSCode\AI\data\vector_db
+2026-04-14 10:46:51,583 - __main__ - INFO - Starting ingestion pipeline
+2026-04-14 10:46:51,584 - __main__ - INFO - === STAGE 1: PDF EXTRACTION ===
+2026-04-14 10:46:51,584 - src.rag.ingestion.extractor - INFO - Starting extraction: data/raw/test.pdf
+2026-04-14 10:48:16,618 - src.rag.ingestion.extractor - INFO - Finished: data/raw/test.pdf in 85.03s
+2026-04-14 10:48:16,619 - __main__ - INFO - === STAGE 2: HEADER NORMALIZATION ===
+2026-04-14 10:48:16,619 - __main__ - INFO - Normalizing headers for: data/raw/test.pdf
+2026-04-14 10:48:16,619 - src.rag.ingestion.processor - INFO - Starting header normalization (in-memory)
+2026-04-14 10:48:16,621 - __main__ - INFO - === STAGE 3: CHUNKING & EMBEDDING ===
+2026-04-14 10:48:16,621 - __main__ - INFO - Chunking file: data/raw/test.pdf
+2026-04-14 10:48:16,621 - src.rag.ingestion.chunker - INFO - Starting chunking process for text input
+2026-04-14 10:48:16,621 - src.rag.ingestion.chunker - INFO - Extracted 7 headers from test
+2026-04-14 10:48:16,622 - src.rag.ingestion.chunker - INFO - Built sibling relationships for 7 headers
+2026-04-14 10:48:16,623 - src.rag.ingestion.chunker - INFO - Created 5 chunks using LangChain
+2026-04-14 10:48:16,623 - src.rag.ingestion.chunker - INFO - Merged chunks into 5 final documents
+2026-04-14 10:48:16,624 - src.rag.ingestion.chunker - INFO - Finalizing 5 documents
+2026-04-14 10:48:16,625 - src.rag.ingestion.chunker - INFO - Completed finalization, returning 5 processed documents
+2026-04-14 10:48:16,625 - __main__ - INFO - === STAGE 4: VECTOR DATABASE APPENDING ===
+2026-04-14 10:48:16,625 - src.rag.ingestion.embedder - INFO - Appending 5 documents
+2026-04-14 10:48:18,622 - src.rag.ingestion.embedder - INFO - Inserted batch 1
+2026-04-14 10:48:18,622 - src.rag.ingestion.embedder - INFO - Append completed
+2026-04-14 10:48:18,623 - __main__ - INFO - Ingestion pipeline completed successfully!
+2026-04-14 10:48:18,623 - __main__ - INFO - === PIPELINE COMPLETE ===
+2026-04-14 10:50:04,083 - __main__ - INFO - Initializing Retriever
+2026-04-14 10:50:04,084 - __main__ - INFO - persist_dir: D:\VSCode\AI\data\vector_db
+2026-04-14 10:50:34,072 - __main__ - INFO - Initializing Retriever
+2026-04-14 10:50:50,556 - __main__ - INFO - Retriever initialized successfully
+2026-04-14 10:50:50,556 - __main__ - INFO - Querying for: Công thức hàm đối ngẫu Lagrange là gì
+2026-04-14 10:50:51,058 - __main__ - INFO - Retrieved 5 documents
+2026-04-14 10:50:51,059 - __main__ - INFO - First doc length: 1382
+2026-04-14 10:50:51,059 - __main__ - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.2. Hàm đối ngẫu Lagrange
+------------
+2026-04-14 10:50:54,956 - __main__ - INFO - Reranking completed
+2026-04-14 10:51:37,879 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:51:39,245 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:51:51,464 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:51:51,464 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:52:24,420 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 10:52:24,427 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 10:52:25,189 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 10:52:25,189 - src.rag.retrieval.retriever - INFO - First doc length: 2401
+2026-04-14 10:52:25,190 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.4. Ví dụ
+----------------------------
+2026-04-14 10:52:29,437 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 10:52:29,440 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 10:52:44,175 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 10:52:44,178 - src.rag.generation.generator - INFO - LM returned answer with 1133 characters
+2026-04-14 10:54:41,946 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 10:54:43,456 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 10:55:07,312 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 10:55:07,312 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 10:55:21,977 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 10:55:21,982 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 10:55:22,762 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 10:55:22,763 - src.rag.retrieval.retriever - INFO - First doc length: 2401
+2026-04-14 10:55:22,763 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.4. Ví dụ
+----------------------------
+2026-04-14 10:55:26,812 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 10:55:26,815 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 10:55:40,018 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 10:55:40,021 - src.rag.generation.generator - INFO - LM returned answer with 1111 characters
+2026-04-14 11:02:20,953 - src.rag.generation.generator - INFO - Asking LM question=cong thuc ham doi ngau la j in thread=default
+2026-04-14 11:02:20,959 - src.rag.retrieval.retriever - INFO - Querying for: cong thuc ham doi ngau la j
+2026-04-14 11:02:21,101 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 11:02:21,101 - src.rag.retrieval.retriever - INFO - First doc length: 2401
+2026-04-14 11:02:21,102 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.4. Ví dụ
+----------------------------
+2026-04-14 11:02:22,523 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 11:02:22,525 - src.rag.generation.generator - INFO - Invoking LLM with 5 messages in history
+2026-04-14 11:02:55,523 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 11:02:55,525 - src.rag.generation.generator - INFO - LM returned answer with 1514 characters
+2026-04-14 11:28:42,576 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:28:45,786 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:29:03,278 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:29:03,278 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:29:03,890 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:29:04,769 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:29:19,614 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:29:19,614 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:33:33,803 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:33:35,086 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:33:50,463 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:33:50,463 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:33:51,347 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:33:52,139 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:34:05,172 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:34:05,173 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:37:20,066 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 11:37:20,096 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 11:37:21,148 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 11:37:21,148 - src.rag.retrieval.retriever - INFO - First doc length: 2401
+2026-04-14 11:37:21,148 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.4. Ví dụ
+----------------------------
+2026-04-14 11:38:04,152 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 11:38:04,154 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 11:38:28,705 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 11:38:28,708 - src.rag.generation.generator - INFO - LM returned answer with 1240 characters
+2026-04-14 11:43:26,237 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:43:27,566 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:43:43,517 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:43:43,518 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:43:43,774 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:43:44,615 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:43:55,599 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:43:55,599 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:44:15,300 - src.rag.generation.generator - INFO - Asking LM question=hàm đối ngẫu có công thức j in thread=default
+2026-04-14 11:44:15,307 - src.rag.retrieval.retriever - INFO - Querying for: hàm đối ngẫu có công thức j
+2026-04-14 11:44:15,860 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 11:44:15,861 - src.rag.retrieval.retriever - INFO - First doc length: 2401
+2026-04-14 11:44:15,861 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.4. Ví dụ
+----------------------------
+2026-04-14 11:44:59,000 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 11:44:59,003 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 11:45:09,875 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 11:45:09,877 - src.rag.generation.generator - INFO - LM returned answer with 1013 characters
+2026-04-14 11:47:14,257 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:47:15,567 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:47:29,103 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:47:29,104 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:48:16,048 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:48:17,367 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:48:29,593 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:48:29,594 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:50:05,825 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:50:07,005 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:50:19,428 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:50:19,428 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:53:01,182 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:53:02,398 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:53:14,744 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:53:14,745 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:53:15,011 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:53:15,895 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:53:27,401 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:53:27,401 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:54:23,425 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:54:24,620 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:54:36,770 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:54:36,770 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 11:54:37,049 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 11:54:37,906 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 11:54:48,433 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 11:54:48,433 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:16:45,714 - src.rag.generation.generator - INFO - Asking LM question=công thức đối ngẫu là j in thread=default
+2026-04-14 13:16:45,745 - src.rag.retrieval.retriever - INFO - Querying for: công thức đối ngẫu là j
+2026-04-14 13:16:47,017 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:16:47,017 - src.rag.retrieval.retriever - INFO - First doc length: 1381
+2026-04-14 13:16:47,017 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.3. Chặn dưới của giá trị tối ưu
+-----
+2026-04-14 13:17:29,967 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:17:29,987 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 13:17:44,941 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:17:44,944 - src.rag.generation.generator - INFO - LM returned answer with 1188 characters
+2026-04-14 13:19:22,344 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:19:23,901 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:19:43,020 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:19:43,020 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:19:43,394 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:19:44,495 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:19:56,247 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:19:56,248 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:20:38,794 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:20:40,202 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:20:54,264 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:20:54,265 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:20:54,677 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:20:55,900 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:21:07,400 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:21:07,401 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:21:29,410 - src.rag.generation.generator - INFO - Asking LM question=công thức đối ngẫu là j in thread=default
+2026-04-14 13:21:29,416 - src.rag.retrieval.retriever - INFO - Querying for: công thức đối ngẫu là j
+2026-04-14 13:21:30,169 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:21:30,169 - src.rag.retrieval.retriever - INFO - First doc length: 1381
+2026-04-14 13:21:30,169 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.3. Chặn dưới của giá trị tối ưu
+-----
+2026-04-14 13:22:12,584 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:22:12,587 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 13:22:27,807 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:22:27,809 - src.rag.generation.generator - INFO - LM returned answer with 1166 characters
+2026-04-14 13:22:57,181 - src.rag.generation.generator - INFO - Asking LM question=đối ngẫu dùng để làm j in thread=default
+2026-04-14 13:22:57,187 - src.rag.retrieval.retriever - INFO - Querying for: đối ngẫu dùng để làm j
+2026-04-14 13:22:57,322 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:22:57,323 - src.rag.retrieval.retriever - INFO - First doc length: 2401
+2026-04-14 13:22:57,323 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.4. Ví dụ
+----------------------------
+2026-04-14 13:23:36,145 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:23:36,147 - src.rag.generation.generator - INFO - Invoking LLM with 5 messages in history
+2026-04-14 13:23:58,364 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:23:58,366 - src.rag.generation.generator - INFO - LM returned answer with 1660 characters
+2026-04-14 13:25:02,968 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:25:04,222 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:25:19,332 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:25:19,333 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:25:19,733 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:25:20,840 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:25:33,240 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:25:33,241 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:25:57,135 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:25:58,337 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:26:11,454 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:26:11,454 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:26:11,832 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:26:12,773 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:26:24,420 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:26:24,420 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:26:47,525 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:26:48,722 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:27:01,890 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:27:01,890 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:27:02,146 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:27:03,000 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:27:14,107 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:27:14,107 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:27:37,822 - src.rag.generation.generator - INFO - Asking LM question=công thức đối ngẫu là j in thread=default
+2026-04-14 13:27:37,828 - src.rag.retrieval.retriever - INFO - Querying for: công thức đối ngẫu là j
+2026-04-14 13:27:38,576 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:27:38,576 - src.rag.retrieval.retriever - INFO - First doc length: 1381
+2026-04-14 13:27:38,577 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.3. Chặn dưới của giá trị tối ưu
+-----
+2026-04-14 13:28:21,810 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:28:21,813 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 13:28:50,104 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:28:50,106 - src.rag.generation.generator - INFO - LM returned answer with 1171 characters
+2026-04-14 13:31:30,538 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:31:31,805 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:31:47,408 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:31:47,409 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:31:47,688 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:31:48,566 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:31:59,599 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:31:59,599 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:32:26,103 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:32:27,604 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:32:40,937 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:32:40,938 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:32:41,201 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:32:42,074 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:32:53,551 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:32:53,551 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:33:13,303 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là j in thread=default
+2026-04-14 13:33:13,308 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là j
+2026-04-14 13:33:13,925 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:33:13,925 - src.rag.retrieval.retriever - INFO - First doc length: 2401
+2026-04-14 13:33:13,926 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.4. Ví dụ
+----------------------------
+2026-04-14 13:33:57,040 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:33:57,043 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 13:34:11,411 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:34:11,414 - src.rag.generation.generator - INFO - LM returned answer with 1200 characters
+2026-04-14 13:36:27,630 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:36:29,424 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:36:45,532 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:36:45,533 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:37:10,911 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:37:12,092 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:37:24,412 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:37:24,412 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:37:47,731 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:37:49,242 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:38:04,002 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:38:04,002 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:38:51,794 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:38:52,982 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:39:05,224 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:39:05,224 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:39:05,497 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:39:06,363 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:39:17,395 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:39:17,395 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:42:15,951 - src.rag.generation.generator - INFO - Asking LM question=công thức hàm đối ngẫu là gì và nó được ứng dụng để làm j in thread=default
+2026-04-14 13:42:15,961 - src.rag.retrieval.retriever - INFO - Querying for: công thức hàm đối ngẫu là gì và nó được ứng dụng để làm j
+2026-04-14 13:42:17,141 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:42:17,142 - src.rag.retrieval.retriever - INFO - First doc length: 1382
+2026-04-14 13:42:17,142 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.2. Hàm đối ngẫu Lagrange
+------------
+2026-04-14 13:43:00,687 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:43:00,689 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 13:43:21,427 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:43:21,429 - src.rag.generation.generator - INFO - LM returned answer with 1375 characters
+2026-04-14 13:45:10,953 - src.rag.generation.generator - INFO - Asking LM question=hàm số đổi ngẫu là j in thread=default
+2026-04-14 13:45:10,957 - src.rag.retrieval.retriever - INFO - Querying for: hàm số đổi ngẫu là j
+2026-04-14 13:45:11,163 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:45:11,163 - src.rag.retrieval.retriever - INFO - First doc length: 1382
+2026-04-14 13:45:11,163 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.2. Hàm đối ngẫu Lagrange
+------------
+2026-04-14 13:45:49,563 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:45:49,564 - src.rag.generation.generator - INFO - Invoking LLM with 5 messages in history
+2026-04-14 13:46:04,777 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:46:04,780 - src.rag.generation.generator - INFO - LM returned answer with 911 characters
+2026-04-14 13:46:35,709 - src.rag.generation.generator - INFO - Asking LM question=machine learning là j in thread=default
+2026-04-14 13:46:35,712 - src.rag.retrieval.retriever - INFO - Querying for: machine learning là j
+2026-04-14 13:46:35,849 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 13:46:35,849 - src.rag.retrieval.retriever - INFO - First doc length: 1850
+2026-04-14 13:46:35,850 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.1. Giới thiệu
+------------------------------
+25.1. Giới thiệu  
+Trong
+2026-04-14 13:47:13,556 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 13:47:13,558 - src.rag.generation.generator - INFO - Invoking LLM with 8 messages in history
+2026-04-14 13:47:34,028 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 13:48:09,711 - src.rag.generation.generator - INFO - LM returned answer with 195 characters
+2026-04-14 13:51:12,417 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:51:13,649 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:51:29,076 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:51:29,076 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:51:29,340 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:51:30,213 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:51:42,788 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:51:42,789 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:51:53,616 - __main__ - INFO - Initializing IngestionPipeline
+2026-04-14 13:51:53,617 - src.rag.ingestion.extractor - INFO - Initialize Marker Model...
+2026-04-14 13:52:02,901 - src.rag.ingestion.extractor - INFO - Model is ready (Init time: 9.28s)
+2026-04-14 13:52:02,901 - src.rag.ingestion.embedder - INFO - Initializing VectorEmbedder with model BAAI/bge-m3 on device cuda
+2026-04-14 13:52:04,399 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:52:05,636 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:52:12,719 - src.rag.ingestion.embedder - INFO - VectorEmbedder initialized successfully
+2026-04-14 13:52:12,719 - __main__ - INFO - IngestionPipeline initialized successfully
+2026-04-14 13:52:12,719 - src.rag.ingestion.embedder - INFO - Connecting to DB at D:\VSCode\AI\data\vector_db
+2026-04-14 13:52:13,796 - __main__ - INFO - Starting ingestion pipeline
+2026-04-14 13:52:13,797 - __main__ - INFO - === STAGE 1: PDF EXTRACTION ===
+2026-04-14 13:52:13,797 - src.rag.ingestion.extractor - INFO - Starting extraction: data/raw/chapter11_ML.pdf
+2026-04-14 13:52:44,341 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:52:44,347 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 13:52:44,772 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 13:52:45,775 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 13:54:05,046 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 13:54:05,062 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:33:58,606 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:33:59,002 - __main__ - INFO - Initializing IngestionPipeline
+2026-04-14 14:33:59,002 - src.rag.ingestion.extractor - INFO - Initialize Marker Model...
+2026-04-14 14:34:00,646 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:34:11,650 - src.rag.ingestion.extractor - INFO - Model is ready (Init time: 12.65s)
+2026-04-14 14:34:11,651 - src.rag.ingestion.embedder - INFO - Initializing VectorEmbedder with model BAAI/bge-m3 on device cuda
+2026-04-14 14:34:26,446 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:34:26,446 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:34:26,765 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:34:27,793 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:34:32,666 - src.rag.ingestion.embedder - INFO - VectorEmbedder initialized successfully
+2026-04-14 14:34:32,667 - __main__ - INFO - IngestionPipeline initialized successfully
+2026-04-14 14:34:32,667 - src.rag.ingestion.embedder - INFO - Connecting to DB at D:\VSCode\AI\data\vector_db
+2026-04-14 14:34:33,774 - __main__ - INFO - Starting ingestion pipeline
+2026-04-14 14:34:33,774 - __main__ - INFO - === STAGE 1: PDF EXTRACTION ===
+2026-04-14 14:34:33,775 - src.rag.ingestion.extractor - INFO - Starting extraction: data/raw/chapter7_ML.pdf
+2026-04-14 14:35:33,940 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:35:33,948 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:45:47,989 - src.rag.ingestion.extractor - INFO - Finished: data/raw/chapter7_ML.pdf in 674.21s
+2026-04-14 14:45:47,991 - __main__ - INFO - === STAGE 2: HEADER NORMALIZATION ===
+2026-04-14 14:45:47,991 - __main__ - INFO - Normalizing headers for: data/raw/chapter7_ML.pdf
+2026-04-14 14:45:47,992 - src.rag.ingestion.processor - INFO - Starting header normalization (in-memory)
+2026-04-14 14:45:47,993 - __main__ - INFO - === STAGE 3: CHUNKING & EMBEDDING ===
+2026-04-14 14:45:47,993 - __main__ - INFO - Chunking file: data/raw/chapter7_ML.pdf
+2026-04-14 14:45:47,993 - src.rag.ingestion.chunker - INFO - Starting chunking process for text input
+2026-04-14 14:45:47,994 - src.rag.ingestion.chunker - INFO - Extracted 17 headers from chapter7_ML
+2026-04-14 14:45:47,994 - src.rag.ingestion.chunker - INFO - Built sibling relationships for 17 headers
+2026-04-14 14:45:47,999 - src.rag.ingestion.chunker - INFO - Created 15 chunks using LangChain
+2026-04-14 14:45:47,999 - src.rag.ingestion.chunker - INFO - Merged chunks into 12 final documents
+2026-04-14 14:45:48,000 - src.rag.ingestion.chunker - INFO - Finalizing 12 documents
+2026-04-14 14:45:48,000 - src.rag.ingestion.chunker - INFO - Completed finalization, returning 12 processed documents
+2026-04-14 14:45:48,000 - __main__ - INFO - === STAGE 4: VECTOR DATABASE APPENDING ===
+2026-04-14 14:45:48,001 - src.rag.ingestion.embedder - INFO - Appending 12 documents
+2026-04-14 14:46:23,412 - src.rag.ingestion.embedder - INFO - Inserted batch 1
+2026-04-14 14:46:26,373 - src.rag.ingestion.embedder - INFO - Inserted batch 2
+2026-04-14 14:46:26,373 - src.rag.ingestion.embedder - INFO - Append completed
+2026-04-14 14:46:26,374 - __main__ - INFO - Ingestion pipeline completed successfully!
+2026-04-14 14:46:26,374 - __main__ - INFO - === PIPELINE COMPLETE ===
+2026-04-14 14:50:08,930 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:50:10,217 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:50:25,063 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:50:25,064 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:50:25,317 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:50:26,197 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:50:37,086 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:50:37,086 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:51:11,553 - src.rag.generation.generator - INFO - Asking LM question=hàm mất mát là j in thread=default
+2026-04-14 14:51:11,561 - src.rag.retrieval.retriever - INFO - Querying for: hàm mất mát là j
+2026-04-14 14:51:12,743 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 14:51:12,743 - src.rag.retrieval.retriever - INFO - First doc length: 3040
+2026-04-14 14:51:12,744 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: chapter7_ML > Hồi quy tuyến tính > 7.2. Xây dựng và tối ưu hàm mất mát > 7.2.1. Sai số dự 
+2026-04-14 14:51:59,830 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 14:51:59,832 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 14:52:14,288 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 14:52:14,291 - src.rag.generation.generator - INFO - LM returned answer with 995 characters
+2026-04-14 14:57:03,794 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:57:05,220 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:57:18,948 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:57:18,949 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:57:19,249 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:57:20,160 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:57:31,285 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:57:31,285 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:57:54,444 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:57:55,610 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:58:07,529 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:58:07,529 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:58:07,808 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 14:58:08,641 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 14:58:19,037 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 14:58:19,037 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 14:58:46,693 - src.rag.generation.generator - INFO - Asking LM question=hàm mất mát là j, được sử dụng nhằm mục đích j in thread=default
+2026-04-14 14:58:46,699 - src.rag.retrieval.retriever - INFO - Querying for: hàm mất mát là j, được sử dụng nhằm mục đích j
+2026-04-14 14:58:47,338 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 14:58:47,339 - src.rag.retrieval.retriever - INFO - First doc length: 3040
+2026-04-14 14:58:47,339 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: chapter7_ML > Hồi quy tuyến tính > 7.2. Xây dựng và tối ưu hàm mất mát > 7.2.1. Sai số dự 
+2026-04-14 14:59:29,192 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 14:59:29,194 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 14:59:46,708 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 14:59:46,711 - src.rag.generation.generator - INFO - LM returned answer with 1083 characters
+2026-04-14 15:04:26,251 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:04:27,605 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:04:40,849 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:04:40,849 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:04:41,123 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:04:41,996 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:04:53,357 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:04:53,358 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:05:13,603 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:05:14,827 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:05:27,120 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:05:27,120 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:05:27,415 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:05:28,330 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:05:39,733 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:05:39,734 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:06:02,254 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:06:03,393 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:06:15,415 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:06:15,415 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:06:15,678 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:06:16,506 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:06:26,832 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:06:26,832 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:07:01,106 - src.rag.generation.generator - INFO - Asking LM question=vai trò của hồi quy tuyến tính là j, bạn có thể khái quát cho tôi những điều cần biết về nó không in thread=default
+2026-04-14 15:07:01,113 - src.rag.retrieval.retriever - INFO - Querying for: vai trò của hồi quy tuyến tính là j, bạn có thể khái quát cho tôi những điều cần biết về nó không
+2026-04-14 15:07:01,867 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 15:07:01,868 - src.rag.retrieval.retriever - INFO - First doc length: 282
+2026-04-14 15:07:01,868 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: chapter7_ML > Hồi quy tuyến tính
+------------------------------
+Hồi quy tuyến tính  
+Hồi q
+2026-04-14 15:07:34,064 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 15:07:34,067 - src.rag.generation.generator - INFO - Invoking LLM with 2 messages in history
+2026-04-14 15:07:59,788 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 15:07:59,790 - src.rag.generation.generator - INFO - LM returned answer with 1474 characters
+2026-04-14 15:08:29,712 - src.rag.generation.generator - INFO - Asking LM question=loss function là j, công thức của nó  in thread=default
+2026-04-14 15:08:29,716 - src.rag.retrieval.retriever - INFO - Querying for: loss function là j, công thức của nó 
+2026-04-14 15:08:29,946 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 15:08:29,947 - src.rag.retrieval.retriever - INFO - First doc length: 3040
+2026-04-14 15:08:29,947 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: chapter7_ML > Hồi quy tuyến tính > 7.2. Xây dựng và tối ưu hàm mất mát > 7.2.1. Sai số dự 
+2026-04-14 15:09:14,339 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 15:09:14,341 - src.rag.generation.generator - INFO - Invoking LLM with 5 messages in history
+2026-04-14 15:09:29,406 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 15:09:29,408 - src.rag.generation.generator - INFO - LM returned answer with 961 characters
+2026-04-14 15:10:24,662 - src.rag.generation.generator - INFO - Asking LM question=hàm đối ngẫu là j, có liên quan j đến hồi quy tuyến tính không in thread=default
+2026-04-14 15:10:24,666 - src.rag.retrieval.retriever - INFO - Querying for: hàm đối ngẫu là j, có liên quan j đến hồi quy tuyến tính không
+2026-04-14 15:10:24,825 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 15:10:24,825 - src.rag.retrieval.retriever - INFO - First doc length: 282
+2026-04-14 15:10:24,825 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: chapter7_ML > Hồi quy tuyến tính
+------------------------------
+Hồi quy tuyến tính  
+Hồi q
+2026-04-14 15:10:48,111 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 15:10:48,114 - src.rag.generation.generator - INFO - Invoking LLM with 8 messages in history
+2026-04-14 15:10:57,024 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 15:11:30,330 - src.rag.generation.generator - INFO - LM returned answer with 48 characters
+2026-04-14 15:17:21,831 - src.rag.generation.generator - INFO - Asking LM question=hàm đối ngẫu là j in thread=default
+2026-04-14 15:17:21,839 - src.rag.retrieval.retriever - INFO - Querying for: hàm đối ngẫu là j
+2026-04-14 15:17:21,998 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 15:17:21,998 - src.rag.retrieval.retriever - INFO - First doc length: 1382
+2026-04-14 15:17:21,999 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: test > Đối ngẫu > 25.2. Hàm đối ngẫu Lagrange > 25.2.2. Hàm đối ngẫu Lagrange
+------------
+2026-04-14 15:18:03,027 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 15:18:03,030 - src.rag.generation.generator - INFO - Invoking LLM with 11 messages in history
+2026-04-14 15:18:34,706 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 15:19:24,666 - src.rag.generation.generator - INFO - LM returned answer with 1125 characters
+2026-04-14 15:20:11,282 - src.rag.generation.generator - INFO - Asking LM question=tóm tắt lại các kiến thức mà tôi đã hỏi từ đầu đến hiện tại in thread=default
+2026-04-14 15:20:11,285 - src.rag.retrieval.retriever - INFO - Querying for: tóm tắt lại các kiến thức mà tôi đã hỏi từ đầu đến hiện tại
+2026-04-14 15:20:11,445 - src.rag.retrieval.retriever - INFO - Retrieved 5 documents
+2026-04-14 15:20:11,445 - src.rag.retrieval.retriever - INFO - First doc length: 1445
+2026-04-14 15:20:11,446 - src.rag.retrieval.retriever - INFO - First doc preview: NGỮ CẢNH: chapter7_ML > Hồi quy tuyến tính > 7.1. Giới thiệu
+------------------------------
+7.1. Giớ
+2026-04-14 15:20:48,550 - src.rag.retrieval.retriever - INFO - Reranking completed
+2026-04-14 15:20:48,552 - src.rag.generation.generator - INFO - Invoking LLM with 14 messages in history
+2026-04-14 15:21:30,448 - src.rag.generation.generator - INFO - LLM response received
+2026-04-14 15:22:06,422 - src.rag.generation.generator - INFO - LM returned answer with 2310 characters
+2026-04-14 15:31:50,493 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:31:54,533 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:32:19,260 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:32:19,260 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:32:19,553 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:32:20,452 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:32:34,779 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:32:34,780 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:33:43,595 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:33:46,011 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:34:02,508 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:34:02,508 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:34:02,803 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:34:03,726 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:34:18,677 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:34:18,678 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:34:48,690 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:34:50,200 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:35:04,618 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:35:04,618 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:35:04,898 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:35:05,787 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:35:20,419 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:35:20,419 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:36:30,746 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:36:32,259 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:36:47,337 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:36:47,337 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:36:47,608 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:36:48,529 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:37:02,733 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:37:02,734 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:37:33,751 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:37:36,068 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:37:49,616 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:37:49,617 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:37:49,901 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:37:50,745 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:38:02,236 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:38:02,236 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:38:33,676 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:38:35,238 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:38:48,910 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:38:48,910 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer
+2026-04-14 15:38:49,282 - src.rag.generation.generator - INFO - Initializing LMClient(model_name=deepseek-chat, temperature=0.0)
+2026-04-14 15:38:50,564 - src.rag.retrieval.retriever - INFO - Initializing Retriever
+2026-04-14 15:39:03,704 - src.rag.retrieval.retriever - INFO - Retriever initialized successfully
+2026-04-14 15:39:03,704 - src.rag.generation.generator - INFO - LMClient initialized successfully with langgraph memory and checkpointer

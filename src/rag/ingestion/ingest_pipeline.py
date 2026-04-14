@@ -8,10 +8,17 @@ from src.utils.log import get_logger
 logger = get_logger(__name__)
 
 class IngestionPipeline:
-    def __init__(self, input_path, collection_name):
+    def __init__(self, input_path, collection_name = "test"):
         logger.info("Initializing IngestionPipeline")
+        BASE_DIR = os.path.dirname(
+            os.path.dirname(
+                os.path.dirname(
+                    os.path.dirname(os.path.abspath(__file__))  # thêm 1 cái nữa
+                )
+            )
+        )
+        self.chroma_dir = os.path.join(BASE_DIR, "data", "vector_db")
         self.input_path = input_path
-        self.chroma_dir = "data/vector_db"
         self.collection_name = collection_name
         
         # Khởi tạo các module
@@ -61,5 +68,5 @@ class IngestionPipeline:
         logger.info("=== PIPELINE COMPLETE ===")
 
 if __name__ == "__main__":
-    pipeline = IngestionPipeline("data/raw/test.pdf", "test")
+    pipeline = IngestionPipeline("data/raw/chapter7_ML.pdf", "test")
     pipeline.run()

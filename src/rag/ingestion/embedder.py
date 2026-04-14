@@ -68,12 +68,12 @@ if __name__ == "__main__":
 
     from pathlib import Path
 
-    BASE_DIR = Path(__file__).resolve().parents[2]
+    BASE_DIR = Path(__file__).resolve().parents[3]
 
     persist_dir = BASE_DIR / "data/vector_db"
     input_dir = BASE_DIR / "data/processed/fix_header"
     
-    collection_name = "rag_collection"
+    collection_name = "test"
 
     embedder = VectorEmbedder()
     chunker = MarkdownChunker()

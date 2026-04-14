@@ -4,10 +4,10 @@ from transformers import AutoModel
 from dotenv import load_dotenv
 
 import os
+import asyncio
 from src.utils.log import get_logger
 
 load_dotenv()
-
 
 
 class Retriever:
@@ -21,11 +21,19 @@ class Retriever:
     ):
 
         if persist_dir is None:
-            BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-            persist_dir = os.path.join(BASE_DIR, "data", "vector_db")
+            BASE_DIR = os.path.dirname(
+                os.path.dirname(
+                    os.path.dirname(
+                        os.path.dirname(os.path.abspath(__file__))  # thêm 1 cái nữa
+                    )
+                )
+            )
+            persist_dir = os.path.join(BASE_DIR, "data", "vector_db")   
+
 
         self.logger = get_logger(__name__)
         self.logger.info("Initializing Retriever")
+
 
         # Initialize embedding
         self.embedding = HuggingFaceEmbeddings(
@@ -54,14 +62,18 @@ class Retriever:
 
         self.logger.info("Retriever initialized successfully")
 
-    def query_and_rerank(self, query):
+    async def query_and_rerank(self, query):
         self.logger.info(f"Querying for: {query}")
 
         # Retrieve documents
         docs = self.retriever.invoke(query)
         self.logger.info(f"Retrieved {len(docs)} documents")
 
-        # Rerank documents
+        # Log thử doc đầu tiên
+        if docs:
+            self.logger.info(f"First doc length: {len(docs[0].page_content)}")
+            self.logger.info(f"First doc preview: {docs[0].page_content[:100]}")
+
         rerank_docs = self.reranker.rerank(
             query,
             [doc.page_content for doc in docs]
@@ -89,14 +101,16 @@ class Retriever:
 
         return "\n\n".join(items)
 
-
-if __name__ == "__main__":
-
+async def main():
     retriever = Retriever()
     query = "Công thức hàm đối ngẫu Lagrange là gì"
-    results = retriever.query_and_rerank(query)
+    results = await retriever.query_and_rerank(query)
     combined_text = retriever.combine_docs(results)
-    
+
     print("Combined documents:\n")
     print(combined_text)
     print("\n---\n")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
