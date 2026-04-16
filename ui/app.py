@@ -17,8 +17,21 @@ def fix_latex(text: str) -> str:
 def run_rag(question: str) -> str:
     loop = asyncio.new_event_loop()
     try:
-        result =  loop.run_until_complete(rag.run(question))
-        return fix_latex(result)
+        result = loop.run_until_complete(rag.run(question))
+
+        answer = result["answer"]
+        source = result.get("source", "unknown")
+
+        answer = fix_latex(answer)
+
+        if source == "vector":
+            source_text = "📄 Nguồn: tài liệu nội bộ"
+        elif source == "web":
+            source_text = "🌐 Nguồn: web"
+        else:
+            source_text = "❓ Nguồn: không xác định"
+
+        return f"{answer}\n\n---\n{source_text}"
     finally:
         loop.close()
 

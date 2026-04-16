@@ -8,7 +8,11 @@ class RagPipeline:
         self.generator = LMClient()
 
     async def run(self, query: str, thread_id: str = "default") -> str:
-        return await self.generator.ask(query, thread_id=thread_id)
+        answer, source = await self.generator.ask(query, thread_id=thread_id)
+        return {
+            "answer": answer,
+            "source": source
+        }
 
 
 

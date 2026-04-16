@@ -12,8 +12,11 @@ rag = RagPipeline()
 # ask
 @app.post("/query", response_model = QueryResponse)
 async def query(request: QueryRequest):
-    answer = await rag.run(request.question)
-    return QueryResponse(answer=answer)
+    result = await rag.run(request.question)
+    return QueryResponse(
+        answer=result["answer"],
+        source=result["source"]
+    )
 
 
 # Mount Gradio

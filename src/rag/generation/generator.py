@@ -11,6 +11,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import StateGraph, START, END
 
 from src.rag.retrieval.retriever import Retriever
+from src.rag.retrieval.web_search import web_search
 from src.utils.log import get_logger
 
 from src.rag.generation.prompts import (RAG_PROMPT_TEMPLATE, SUMMARIZE_PROMPT_TEMPLATE, SUMMARIZE_INIT_PROMPT)
@@ -19,11 +20,13 @@ load_dotenv()
 logger = get_logger(__name__)
 
 
+
 class LMState(TypedDict):
     """State for LM conversation with message memory."""
     messages: Annotated[list[BaseMessage], add_messages]
     summary: Optional[str] = None
     context: Optional[str] = None
+    source: Optional[str] = None 
 
 
 class LMClient:
@@ -51,6 +54,7 @@ class LMClient:
         self.compiled_graph = self.graph.compile(checkpointer=self.checkpointer)
 
         self.retriever = Retriever()
+        self.web_search = web_search
 
         logger.info("LMClient initialized successfully with langgraph memory and checkpointer")
 
@@ -60,7 +64,16 @@ class LMClient:
         
         context_parts = []
         for i, doc in enumerate(reranked, 1):
-            metadata = doc.metadata if hasattr(doc, "metadata") else {}
+            if isinstance(doc, dict) and "document" in doc:
+                content = doc["document"]
+                metadata = {}
+            elif hasattr(doc, "page_content"):
+                content = doc.page_content
+                metadata = doc.metadata if hasattr(doc, "metadata") else {}
+            else:
+                content = str(doc)
+                metadata = {}
+
             source   = metadata.get("source", metadata.get("file_name", f"Tài liệu {i}"))
             chapter  = metadata.get("chapter", "")
             page     = metadata.get("page", "")
@@ -72,7 +85,6 @@ class LMClient:
                 header_parts.append(f"Trang: {page}")
             header = " | ".join(header_parts) + "]"
 
-            content = doc.page_content if hasattr(doc, "page_content") else str(doc)
             context_parts.append(f"{header}\n{content}")
 
         return "\n\n---\n\n".join(context_parts)
@@ -82,17 +94,40 @@ class LMClient:
         messages = state["messages"]
         user_msg = next((msg for msg in reversed(messages) if isinstance(msg, HumanMessage)), None)
         question = user_msg.content if user_msg else ""
+
         context_text = state.get("context", "")
+        source = "vector"
+
 
         if not context_text and question:
-            context_text = await self.build_context(question)
+            local_context = await self.build_context(question)
 
-        system_msg = SystemMessage(content=self.PROMPT_TEMPLATE.format(context=context_text, question=""))
+            # fallback websearch
+            if not local_context or len(local_context) < 200:
+                logger.info("Local context insufficient → fallback to Tavily")
+                web_context = self.web_search(question)
+                
+                context_text = f"[WEB DATA]\n{web_context}"
+                source = "web"
+            else:
+                context_text = f"[LOCAL DATA]\n{local_context}"
+                source = "vector"
+
+        system_msg = SystemMessage(
+            content=self.PROMPT_TEMPLATE.format(
+                context=context_text,
+                question="",
+                source = source
+                )
+        )
         new_messages = [system_msg]
         if user_msg:
             new_messages.append(user_msg)
 
-        return {"messages": new_messages}
+        return {
+            "messages": new_messages,
+            "source": source
+        }
 
     # Add node for LLM call
     async def call_lm(self, state: LMState) -> dict:
@@ -107,7 +142,10 @@ class LMClient:
         result = await self.llm.ainvoke(messages)
         logger.info("LLM response received")
         
-        return {"messages": [result]}
+        return {
+            "messages": [result],
+            "source": state.get("source", "unknown")    
+        }
     
     # Add summarize node
     async def summarize_conversation(self, state: LMState) -> dict:
@@ -128,7 +166,11 @@ class LMClient:
 
         # Keep only the 2 most recent messages to keep history compact
         trimmed_messages = state["messages"][-2:]
-        return {"summary": response.content, "messages": trimmed_messages}
+        return {
+            "summary": response.content, 
+            "messages": trimmed_messages,
+            "source": state.get("source", "unknown")
+        }
     
     # Conditional: if messages > 6, summarize, else end
     def should_summarize(self, state: LMState) -> str:
@@ -170,14 +212,17 @@ class LMClient:
             
         # Extract answer from last message
         messages = result.get("messages", [])
+        source = result.get("source", "unknown")
+
         if messages:
             last_msg = messages[-1]
             answer = getattr(last_msg, "content", str(last_msg))
+                
             logger.info("LM returned answer with %d characters", len(answer))
-            return answer
+            return answer, source
         
         logger.warning("No response from LM graph")
-        return ""
+        return "", source
 
 async def main():
     query = "Công thức hàm đối ngẫu Lagrange là gì"
